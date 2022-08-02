@@ -5,19 +5,27 @@
         <div class="heading">
           {{mainHeading}}
         </div>
-        <div class="blurb">
+        {{!-- <div class="blurb">
           {{blurb}}
-        </div>
+        </div> --}}
       </div>
       <div class="second-box">
         <div class="links">
-          {{#each linkSections as |section|}}
+          {{!-- {{#each linkSections as |section|}} --}}
+            {{#each socialLinks as |link|}}
             <div class="list">
-              <span class={{section.className}} title={{section.title}}>
-                {{section.text}}
+              <span class="">
+                <a
+                  class="social-link {{link.className}}"
+                  title={{link.title}}
+                  target={{link.target}}
+                  href={{link.href}}
+                  >
+                  {{d-icon link.icon}}
+                </a>
               </span>
 
-              <ul>
+              {{!-- <ul>
                 {{#each section.childLinks as |link|}}
                   <li class="footer-section-link-wrapper {{link.className}}">
                     <a
@@ -30,14 +38,15 @@
                     </a>
                   </li>
                 {{/each}}
-              </ul>
+              </ul> --}}
             </div>
           {{/each}}
         </div>
       </div>
       <div class="third-box">
         <div class="footer-links">
-          {{#each smallLinks as |link|}}
+          {{blurb}}
+          {{!-- {{#each smallLinks as |link|}}
             <a
               class="small-link {{link.className}}"
               title={{link.title}}
@@ -46,11 +55,12 @@
             >
               {{link.text}}
             </a>
-          {{/each}}
+          {{/each}} --}}
         </div>
 
         <div class="social">
-          {{#each socialLinks as |link|}}
+          Copyright @ Ecofrag
+          {{!-- {{#each socialLinks as |link|}}
             <a
               class="social-link {{link.className}}"
               title={{link.title}}
@@ -59,7 +69,7 @@
             >
               {{d-icon link.icon}}
             </a>
-          {{/each}}
+          {{/each}} --}}
         </div>
       </div>
     </div>
