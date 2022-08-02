@@ -17,8 +17,8 @@
     .heading {
       font-size: 45px;
       font-weight: bold;
-      margin-bottom: 0.5em;
       display: block;
+      color: var(--primary);
     }
   }
   .second-box {
@@ -57,6 +57,8 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: flex-end;
+      color: var(--primary);
+      font-size: 20px;
       .social-link {
         margin: 20px 10px;
         display: flex;
@@ -83,6 +85,9 @@
   }
   .footer-links {
     flex: 1;
+    color: var(--primary);
+    font-size: 20px;
+    margin-left: 5px;
   }
   .list span {
     font-weight: bold;
@@ -91,7 +96,7 @@
     color: var(--secondary-high);
   }
   .list {
-    margin: 1em;
+    margin: 5px;
     margin-top: 0;
   }
   .d-icon {
