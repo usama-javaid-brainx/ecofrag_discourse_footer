@@ -8,7 +8,10 @@
   .flex-between{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 1400px;
+    color: var(--secondary);
+    padding: 1em 0 2em 0;
     .heading {
         font-size: 45px;
         font-weight: bold;
@@ -16,9 +19,6 @@
         color: var(--primary);
       }
       .links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
 
         ul {
           list-style: none;
@@ -46,6 +46,10 @@
         color: var(--primary);
         font-size: 20px;
         margin-left: 5px;
+      }
+      .text {
+        color: var(--primary);
+        font-size: 20px;
       }
   }
   .flexbox {
