@@ -1,15 +1,10 @@
 {{#if showFooter}}
   <div class="wrap">
-    <div class="flexbox">
+    <div class="flex-between">
       <div class="first-box">
         <div class="heading">
           {{mainHeading}}
         </div>
-        {{!-- <div class="blurb">
-          {{blurb}}
-        </div> --}}
-      </div>
-      <div class="second-box">
         <div class="links">
           {{!-- {{#each linkSections as |section|}} --}}
             {{#each socialLinks as |link|}}
@@ -42,8 +37,11 @@
             </div>
           {{/each}}
         </div>
+        {{!-- <div class="blurb">
+          {{blurb}}
+        </div> --}}
       </div>
-      <div class="third-box">
+      <div class="flex-between">
         <div class="footer-links">
           {{blurb}}
           {{!-- {{#each smallLinks as |link|}}
@@ -58,7 +56,7 @@
           {{/each}} --}}
         </div>
 
-        <div class="social">
+        <div class="">
           Copyright @ Ecofrag
           {{!-- {{#each socialLinks as |link|}}
             <a

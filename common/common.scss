@@ -5,6 +5,11 @@
   .wrap {
     box-sizing: border-box;
   }
+  .flex-between{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+  }
   .flexbox {
     width: 100%;
     display: flex;
