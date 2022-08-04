@@ -9,6 +9,44 @@
     display: flex;
     justify-content: space-between;
     max-width: 1400px;
+    .heading {
+        font-size: 45px;
+        font-weight: bold;
+        display: block;
+        color: var(--primary);
+      }
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        ul {
+          list-style: none;
+          margin: 0;
+          min-width: 100px;
+        }
+
+        li {
+          margin: 0.5em 0;
+        }
+
+        .d-icon {
+          color: #fff;
+          min-width: unset;
+          margin: 0;
+          font-size: $font-up-2;
+          opacity: 1;
+          background: #43aaf4ff;
+          border-radius: 20px;
+          padding: 8px;
+        }
+      }
+      .footer-links {
+        flex: 1;
+        color: var(--primary);
+        font-size: 20px;
+        margin-left: 5px;
+      }
   }
   .flexbox {
     width: 100%;
