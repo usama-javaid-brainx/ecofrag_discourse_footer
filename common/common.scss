@@ -9,11 +9,12 @@
     color: var(--secondary);
     padding: 1em 0 2em 0;
     width: 70vw;
-  
+  @media screen and (max-width: $large-width) {
+    width: 95vw;
+  }
   .flex-between{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     max-width: 1400px;
     
     .heading {
@@ -83,7 +84,6 @@
       .d-icon {
         color: #fff;
         min-width: unset;
-        margin: 0;
         font-size: $font-up-2;
         opacity: 1;
         background: #43aaf4ff;
@@ -184,7 +184,6 @@
       justify-content: space-between;
     }
     .list {
-      margin: 0;
       margin-top: 1em;
     }
     .first-box,
@@ -204,7 +203,7 @@
       margin-top: 1em;
       display: inline-block;
       vertical-align: top;
-      min-width: 50%;
+      // min-width: 50%;
       font-size: $font-up-1;
     }
     .links {
