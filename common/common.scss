@@ -8,9 +8,11 @@
   .main-flex{
     color: var(--secondary);
     padding: 1em 0 2em 0;
-    width: 70vw;
+    width: 73vw;
+    margin-left: -35px;
   @media screen and (max-width: $large-width) {
     width: 95vw;
+    margin-left: 0;
   }
   .flex-between{
     display: flex;
