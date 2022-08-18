@@ -7,7 +7,7 @@
   .main-flex{
     color: var(--secondary);
     padding: 1em 0 2em 0;
-
+    max-width: (var(--d-max-width) - 52px);
   .flex-between{
     display: flex;
     justify-content: space-between;
