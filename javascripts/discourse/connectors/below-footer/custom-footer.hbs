@@ -2,12 +2,10 @@
   <div class="wrap">
     <div class="main-flex">    
       <div class="flex-between">
-        {{!-- <div class="first-box"> --}}
           <div class="heading">
             {{mainHeading}}
           </div>
           <div class="links">
-            {{!-- {{#each linkSections as |section|}} --}}
               {{#each socialLinks as |link|}}
               <div class="list">
                 <span class="">
@@ -20,56 +18,17 @@
                     {{d-icon link.icon}}
                   </a>
                 </span>
-
-                {{!-- <ul>
-                  {{#each section.childLinks as |link|}}
-                    <li class="footer-section-link-wrapper {{link.className}}">
-                      <a
-                        class="footer-section-link"
-                        title={{link.title}}
-                        href={{link.href}}
-                        target={{link.target}}
-                      >
-                        {{link.text}}
-                      </a>
-                    </li>
-                  {{/each}}
-                </ul> --}}
               </div>
             {{/each}}
           </div>
-          {{!-- <div class="blurb">
-            {{blurb}}
-          </div> --}}
-        {{!-- </div> --}}
       </div>
       <div class="flex-between">
         <div class="footer-links">
           {{blurb}}
-          {{!-- {{#each smallLinks as |link|}}
-            <a
-              class="small-link {{link.className}}"
-              title={{link.title}}
-              target={{link.target}}
-              href={{link.href}}
-            >
-              {{link.text}}
-            </a>
-          {{/each}} --}}
         </div>
 
         <div class="text">
           Copyright @ Ecofrag
-          {{!-- {{#each socialLinks as |link|}}
-            <a
-              class="social-link {{link.className}}"
-              title={{link.title}}
-              target={{link.target}}
-              href={{link.href}}
-            >
-              {{d-icon link.icon}}
-            </a>
-          {{/each}} --}}
         </div>
       </div>
   </div>
